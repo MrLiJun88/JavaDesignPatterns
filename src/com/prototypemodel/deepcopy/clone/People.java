@@ -18,6 +18,7 @@ public class People implements Cloneable{
     public Object clone() throws CloneNotSupportedException {
         People people = null;
         people = (People)super.clone();
+        /**对dog引用类型进行clone*/
         Dog dog = (Dog)people.dog.clone();
         people.dog = dog;
         return people;

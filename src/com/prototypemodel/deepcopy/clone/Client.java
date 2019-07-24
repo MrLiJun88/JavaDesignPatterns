@@ -14,7 +14,7 @@ package com.prototypemodel.deepcopy.clone;
  */
 public class Client {
     public static void main(String[] args) throws Exception{
-        Dog dog1 = new Dog("wangcai");
+        Dog dog1 = new Dog("world");
         People p1 = new People("lijun",22,dog1);
         People p2 = (People) p1.clone();
         p1.dog.name = "hello";
