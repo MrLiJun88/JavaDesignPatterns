@@ -16,7 +16,7 @@ public class Client {
 
         /**恢复到状态1*/
         System.out.println("当前的状态是：" + originator.state);
-        originator.getStateFromMemo(caretaker.getMemo(1));
+        originator.getStateFromMemo(caretaker.getMemo(0));
         System.out.println("恢复后的状态是：" + originator.state);
     }
 }
