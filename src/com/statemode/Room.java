@@ -8,7 +8,7 @@ import com.statemode.state.State;
 public class Room {
     private State state;
     /**定义房间的三种状态
-     * 空间
+     * 空闲
      * 入住
      * 预定
      * */
