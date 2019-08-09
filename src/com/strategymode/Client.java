@@ -14,9 +14,13 @@ public class Client {
         Car aodi = new AoDi("奥迪","蓝色");
         Car benchi = new BenChi("奔驰","红色");
 
-        Person person = new Person("王五",25);
-        person.driver(baoma);
-        person.driver(benchi);
-        person.driver(aodi);
+        Person person = new Person("王五",25,baoma);
+        person.driver();
+        /**切换策略*/
+        person.setCar(aodi);
+        person.driver();
+        /**切换策略*/
+        person.setCar(benchi);
+        person.driver();
     }
 }
